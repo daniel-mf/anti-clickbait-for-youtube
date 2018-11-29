@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Anti-Clickbait Thumbnails for YouTube",
+  "version": "0.1.0",
+  "description": "Replaces the thumbnails of the videos with their actual screenshots.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "js": [
+        "inject.js"
+      ],
+      "all_frames": true,
+      "matches": [
+        "https://www.youtube.com/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "content.js"
+  ]
+}
