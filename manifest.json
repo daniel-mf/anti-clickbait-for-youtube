@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "description": "Replaces the thumbnails of the videos with their actual screenshots.",
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
   },
   "content_scripts": [
     {
